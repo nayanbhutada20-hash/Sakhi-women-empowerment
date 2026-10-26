@@ -1,0 +1,610 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin Sakhi",
+      "email": "admin@sakhi.demo",
+      "password": "demo123",
+      "role": "admin",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Meena Patil",
+      "email": "seller@sakhi.demo",
+      "password": "demo123",
+      "role": "seller",
+      "status": "active",
+      "sellerStatus": "approved",
+      "business": "Meena Handicrafts, Pune"
+    },
+    {
+      "id": 3,
+      "name": "Asha Kulkarni",
+      "email": "buyer@sakhi.demo",
+      "password": "demo123",
+      "role": "buyer",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "name": "Ravi Sharma",
+      "email": "donor@sakhi.demo",
+      "password": "demo123",
+      "role": "donor",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "name": "Priya Nair",
+      "email": "volunteer@sakhi.demo",
+      "password": "demo123",
+      "role": "volunteer",
+      "status": "active"
+    },
+    {
+      "id": 6,
+      "name": "Lata Deshmukh",
+      "email": "newseller@sakhi.demo",
+      "password": "demo123",
+      "role": "seller",
+      "status": "active",
+      "sellerStatus": "pending",
+      "business": "Lata Pickles, Nashik"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Handmade Jewellery"
+    },
+    {
+      "id": 2,
+      "name": "Clothing"
+    },
+    {
+      "id": 3,
+      "name": "Embroidery"
+    },
+    {
+      "id": 4,
+      "name": "Handicrafts"
+    },
+    {
+      "id": 5,
+      "name": "Bags"
+    },
+    {
+      "id": 6,
+      "name": "Home Decor"
+    },
+    {
+      "id": 7,
+      "name": "Food Products"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Warli Art Tote Bag",
+      "description": "Warli Art Tote Bag - handmade by women artisans in Maharashtra.",
+      "category": "Bags",
+      "price": 450,
+      "stock": 20,
+      "available": true,
+      "status": "approved",
+      "sellerId": 2,
+      "image": "https://picsum.photos/seed/WarliArtToteBag/400/300",
+      "createdAt": "2026-01-10"
+    },
+    {
+      "id": 2,
+      "name": "Silver Oxidised Earrings",
+      "description": "Silver Oxidised Earrings - handmade by women artisans in Maharashtra.",
+      "category": "Handmade Jewellery",
+      "price": 320,
+      "stock": 3,
+      "available": true,
+      "status": "approved",
+      "sellerId": 2,
+      "image": "https://picsum.photos/seed/SilverOxidisedEarrings/400/300",
+      "createdAt": "2026-02-10"
+    },
+    {
+      "id": 3,
+      "name": "Kantha Stitch Dupatta",
+      "description": "Kantha Stitch Dupatta - handmade by women artisans in Maharashtra.",
+      "category": "Embroidery",
+      "price": 899,
+      "stock": 10,
+      "available": true,
+      "status": "approved",
+      "sellerId": 2,
+      "image": "https://picsum.photos/seed/KanthaStitchDupatta/400/300",
+      "createdAt": "2026-03-10"
+    },
+    {
+      "id": 4,
+      "name": "Terracotta Diya Set",
+      "description": "Terracotta Diya Set - handmade by women artisans in Maharashtra.",
+      "category": "Home Decor",
+      "price": 250,
+      "stock": 40,
+      "available": true,
+      "status": "approved",
+      "sellerId": 2,
+      "image": "https://picsum.photos/seed/TerracottaDiyaSet/400/300",
+      "createdAt": "2026-04-10"
+    },
+    {
+      "id": 5,
+      "name": "Homemade Mango Pickle 500g",
+      "description": "Homemade Mango Pickle 500g - handmade by women artisans in Maharashtra.",
+      "category": "Food Products",
+      "price": 280,
+      "stock": 23,
+      "available": true,
+      "status": "approved",
+      "sellerId": 2,
+      "image": "https://picsum.photos/seed/HomemadeMangoPickle500g/400/300",
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": 6,
+      "name": "Bamboo Basket",
+      "description": "Bamboo Basket - handmade by women artisans in Maharashtra.",
+      "category": "Handicrafts",
+      "price": 380,
+      "stock": 0,
+      "available": true,
+      "status": "approved",
+      "sellerId": 2,
+      "image": "https://picsum.photos/seed/BambooBasket/400/300",
+      "createdAt": "2026-06-10"
+    },
+    {
+      "id": 7,
+      "name": "Block Print Kurti",
+      "description": "Block Print Kurti - handmade by women artisans in Maharashtra.",
+      "category": "Clothing",
+      "price": 1100,
+      "stock": 8,
+      "available": true,
+      "status": "pending",
+      "sellerId": 2,
+      "image": "https://picsum.photos/seed/BlockPrintKurti/400/300",
+      "createdAt": "2026-07-10"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-1001",
+      "buyerId": 3,
+      "customerName": "Asha Kulkarni",
+      "address": "12 MG Road, Pune",
+      "phone": "9000000001",
+      "items": [
+        {
+          "productId": 1,
+          "sellerId": 2,
+          "name": "Warli Art Tote Bag",
+          "price": 450,
+          "qty": 1
+        }
+      ],
+      "sellerIds": [
+        2
+      ],
+      "subtotal": 450,
+      "discount": 0,
+      "total": 450,
+      "status": "Delivered",
+      "createdAt": "2026-09-01"
+    },
+    {
+      "id": "ORD-1793003371910",
+      "buyerId": 3,
+      "customerName": "Asha Kulkarni",
+      "address": "wiuwheudiwofkebk",
+      "phone": "1111111111",
+      "items": [
+        {
+          "productId": 5,
+          "sellerId": 2,
+          "name": "Homemade Mango Pickle 500g",
+          "price": 280,
+          "qty": 1
+        }
+      ],
+      "sellerIds": [
+        2
+      ],
+      "subtotal": 280,
+      "discount": 0,
+      "total": 280,
+      "coupon": null,
+      "status": "Placed",
+      "createdAt": "2026-10-26"
+    },
+    {
+      "id": "ORD-1793003377774",
+      "buyerId": 3,
+      "customerName": "Asha Kulkarni",
+      "address": "wiuwheudiwofkebk",
+      "phone": "1111111111",
+      "items": [
+        {
+          "productId": 5,
+          "sellerId": 2,
+          "name": "Homemade Mango Pickle 500g",
+          "price": 280,
+          "qty": 1
+        }
+      ],
+      "sellerIds": [
+        2
+      ],
+      "subtotal": 280,
+      "discount": 0,
+      "total": 280,
+      "coupon": null,
+      "status": "Placed",
+      "createdAt": "2026-10-26"
+    }
+  ],
+  "coupons": [
+    {
+      "id": 1,
+      "code": "SAKHI10",
+      "type": "percent",
+      "value": 10,
+      "minOrder": 500,
+      "expiry": "2027-12-31",
+      "limit": 100,
+      "used": 0,
+      "active": true
+    },
+    {
+      "id": 2,
+      "code": "OLD50",
+      "type": "flat",
+      "value": 50,
+      "minOrder": 100,
+      "expiry": "2024-01-01",
+      "limit": 10,
+      "used": 0,
+      "active": true
+    }
+  ],
+  "initiatives": [
+    {
+      "id": 1,
+      "title": "Girls' Education Fund",
+      "description": "Scholarships for rural girls.",
+      "target": 100000,
+      "deadline": "2027-03-31",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "title": "Sewing Machines for Livelihood",
+      "description": "Equipment for new tailors.",
+      "target": 50000,
+      "deadline": "2027-06-30",
+      "status": "active"
+    }
+  ],
+  "donations": [
+    {
+      "id": 1,
+      "receipt": "DEMO-RCPT-0001",
+      "donorId": 4,
+      "donorName": "Ravi Sharma",
+      "initiativeId": 1,
+      "amount": 5000,
+      "message": "",
+      "createdAt": "2026-09-05"
+    },
+    {
+      "receipt": "DEMO-RCPT-1793003929649",
+      "donorId": 1,
+      "donorName": "Admin Sakhi",
+      "initiativeId": 2,
+      "amount": 25251,
+      "message": "",
+      "createdAt": "2026-10-26",
+      "id": 2
+    }
+  ],
+  "trainingPrograms": [
+    {
+      "id": 1,
+      "title": "Tailoring Basics",
+      "category": "Tailoring",
+      "duration": "8 weeks",
+      "instructor": "Sunita Joshi",
+      "seats": 20,
+      "startDate": "2026-12-01",
+      "mode": "Pune Centre",
+      "status": "open"
+    },
+    {
+      "id": 2,
+      "title": "Digital Marketing for Sellers",
+      "category": "Digital marketing",
+      "duration": "4 weeks",
+      "instructor": "Neha Rao",
+      "seats": 2,
+      "startDate": "2026-11-15",
+      "mode": "Online",
+      "status": "open"
+    }
+  ],
+  "trainingApplications": [
+    {
+      "programId": 1,
+      "userId": 3,
+      "userName": "Asha Kulkarni",
+      "status": "Cancelled",
+      "createdAt": "2026-10-26",
+      "id": 1
+    }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Data Entry Operator (Demo)",
+      "location": "Pune",
+      "mode": "Work from home",
+      "type": "Part-time",
+      "salary": "₹8,000-12,000",
+      "deadline": "2026-12-31",
+      "status": "open"
+    },
+    {
+      "id": 2,
+      "title": "Tailoring Assistant (Demo)",
+      "location": "Nashik",
+      "mode": "On-site",
+      "type": "Full-time",
+      "salary": "₹12,000-15,000",
+      "deadline": "2026-12-15",
+      "status": "open"
+    }
+  ],
+  "jobApplications": [],
+  "notifications": [
+    {
+      "userId": 3,
+      "text": "Application submitted: Tailoring Basics",
+      "read": false,
+      "createdAt": "2026-10-26T08:30:33.633Z",
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "text": "Registered for Women's Health Awareness",
+      "read": false,
+      "createdAt": "2026-10-26T08:31:15.652Z",
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "text": "Support tickets: submitted (TKT-603673)",
+      "read": false,
+      "createdAt": "2026-10-26T08:33:23.705Z",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "text": "Simulated donation recorded: DEMO-RCPT-1793003929649",
+      "read": true,
+      "createdAt": "2026-10-26T08:38:49.681Z",
+      "id": 4
+    }
+  ],
+  "activityLogs": [],
+  "wishlists": [],
+  "reviews": [
+    {
+      "id": 1,
+      "productId": 1,
+      "userId": 3,
+      "userName": "Asha Kulkarni",
+      "rating": 5,
+      "comment": "Lovely stitching and sturdy.",
+      "status": "Approved",
+      "createdAt": "2026-09-10"
+    }
+  ],
+  "successStories": [
+    {
+      "id": 1,
+      "title": "From Home Kitchen to Online Store",
+      "author": "Meena Patil",
+      "business": "Meena Handicrafts",
+      "challenges": "No capital or market access.",
+      "achievements": "Now supplies 40 shops.",
+      "image": "https://picsum.photos/seed/meena/400/300",
+      "status": "Approved",
+      "userId": 2,
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": 2,
+      "title": "Learning to Sell Online",
+      "author": "Lata Deshmukh",
+      "business": "Lata Pickles",
+      "challenges": "Limited digital skills.",
+      "achievements": "First 100 online orders.",
+      "image": "https://picsum.photos/seed/lata/400/300",
+      "status": "Pending",
+      "userId": 6,
+      "createdAt": "2026-10-01"
+    }
+  ],
+  "selfHelpGroups": [
+    {
+      "id": 1,
+      "name": "Shakti Mahila Bachat Gat",
+      "location": "Pune",
+      "description": "Savings and micro-loan group.",
+      "objectives": "Financial independence",
+      "leaderId": 2,
+      "baseMembers": 12,
+      "activities": "Monthly savings, craft fairs",
+      "status": "Approved"
+    },
+    {
+      "id": 2,
+      "name": "Nari Udyog Group",
+      "location": "Nashik",
+      "description": "Food business collective.",
+      "objectives": "Shared kitchen and marketing",
+      "leaderId": 6,
+      "baseMembers": 8,
+      "activities": "Weekly workshops",
+      "status": "Pending"
+    }
+  ],
+  "groupMemberships": [],
+  "mentorshipRequests": [],
+  "financialAssistanceApplications": [],
+  "volunteerApplications": [
+    {
+      "id": 1,
+      "userId": 5,
+      "userName": "Priya Nair",
+      "skills": "Teaching",
+      "availability": "Weekends",
+      "preferredActivity": "Workshops",
+      "status": "Approved",
+      "assignedActivity": "Digital literacy workshop",
+      "createdAt": "2026-09-15"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Digital Literacy Workshop",
+      "description": "Hands-on phone and internet basics.",
+      "date": "2026-11-20",
+      "time": "10:00",
+      "location": "Pune Community Hall",
+      "capacity": 2,
+      "status": "Scheduled"
+    },
+    {
+      "id": 2,
+      "title": "Women's Health Awareness",
+      "description": "Free awareness session.",
+      "date": "2026-12-05",
+      "time": "11:00",
+      "location": "Online",
+      "capacity": 100,
+      "status": "Scheduled"
+    }
+  ],
+  "eventRegistrations": [
+    {
+      "eventId": 2,
+      "userId": 3,
+      "userName": "Asha Kulkarni",
+      "status": "Cancelled",
+      "attended": false,
+      "createdAt": "2026-10-26",
+      "id": 1
+    }
+  ],
+  "forumPosts": [
+    {
+      "id": 1,
+      "title": "How do I price handmade items?",
+      "category": "Entrepreneurship",
+      "body": "Looking for tips on pricing.",
+      "userId": 3,
+      "userName": "Asha Kulkarni",
+      "status": "visible",
+      "createdAt": "2026-10-02"
+    }
+  ],
+  "forumComments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 2,
+      "userName": "Meena Patil",
+      "body": "Add material cost, your time, and 20% margin.",
+      "status": "visible",
+      "createdAt": "2026-10-03"
+    }
+  ],
+  "reports": [],
+  "complaints": [],
+  "supportTickets": [
+    {
+      "subject": "kmkmkmk",
+      "priority": "High",
+      "description": "nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+      "ref": "TKT-603673",
+      "userId": 3,
+      "userName": "Asha Kulkarni",
+      "status": "Open",
+      "createdAt": "2026-10-26",
+      "id": 1
+    }
+  ],
+  "contactMessages": [],
+  "faqs": [
+    {
+      "id": 1,
+      "category": "Shopping",
+      "question": "Are payments real?",
+      "answer": "No. Orders and donations are simulated demos."
+    },
+    {
+      "id": 2,
+      "category": "Selling",
+      "question": "How do I start selling?",
+      "answer": "Register as a seller and wait for admin approval."
+    },
+    {
+      "id": 3,
+      "category": "Training",
+      "question": "How do I join training?",
+      "answer": "Open Training and click Apply."
+    },
+    {
+      "id": 4,
+      "category": "Welfare",
+      "question": "Can I apply for assistance?",
+      "answer": "Yes, use the Assistance page. Do not enter real ID or bank details."
+    },
+    {
+      "id": 5,
+      "category": "Account",
+      "question": "Is my data safe?",
+      "answer": "This is a local demo with no real security. Use fictional data."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sunita Pawar",
+      "role": "Seller, Pune",
+      "text": "Sakhi helped me reach customers beyond my village."
+    },
+    {
+      "id": 2,
+      "name": "Kavita Jadhav",
+      "role": "Trainee, Nashik",
+      "text": "The tailoring course gave me the confidence to start earning."
+    },
+    {
+      "id": 3,
+      "name": "Rekha Iyer",
+      "role": "Volunteer",
+      "text": "Teaching digital basics at workshops has been deeply rewarding."
+    }
+  ]
+}
